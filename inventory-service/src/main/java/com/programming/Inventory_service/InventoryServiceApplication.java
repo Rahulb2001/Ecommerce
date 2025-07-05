@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
+
 @SpringBootApplication
 public class InventoryServiceApplication {
 
@@ -26,16 +27,12 @@ public class InventoryServiceApplication {
 
 			Inventory inventory2 = new Inventory();
 			inventory2.setSkuCode("iphone_14");
-			inventory2.setQuantity(0);
+			inventory2.setQuantity(10);
 			inverntory.save(inventory2);
 
 
 			System.out.println("Inventory service is running and ready to accept requests.");
 		};
-
-
-
-
 	}
 
 }
